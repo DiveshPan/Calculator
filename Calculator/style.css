@@ -1,0 +1,84 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #000000;
+      min-height: 100vh;
+      margin: 0;
+      
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0; /* container will be centered by .all */
+    }
+
+    .top_title{
+      background-color: #a00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5em 2em;
+      margin: 0;
+      border-radius: 6px;
+      position: fixed; /* keep name at the top of the page */
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+    .calculator {
+      background: #222;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .display {
+      background: #000;
+      color: #0f0;
+      font-size: 24px;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      text-align: right;
+      min-width: 240px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 60px);
+      gap: 10px;
+    } 
+    
+    button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+
+    .equal {
+      background-color: #0a0;
+    }
+
+    .clear {
+      background-color: #a00;
+    }
+    .all{
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;    /* vertical center */
+        justify-content: center;/* horizontal center */
+        flex-direction: column;
+        padding-top: 80px; /* leave space for the fixed title */
+    }
